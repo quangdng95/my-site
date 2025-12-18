@@ -2,13 +2,11 @@
 'use client';
 
 import React from 'react';
-import { Button, Typography, Card, Flex, theme } from 'antd'; // 1. Nhớ import 'theme' ở đây
+import { Button, Typography, Card, Flex, theme } from 'antd'; 
 
 const { Title, Paragraph } = Typography;
 
 export default function Home() {
-  // 👇 2. ĐÂY LÀ DÒNG QUAN TRỌNG MÀ QUANG THIẾU NÈ 👇
-  // Dòng này có nghĩa là: "Cho tui xin cái mã màu nền (colorBgLayout) trong bộ theme đang xài"
   const {
     token: { colorBgLayout },
   } = theme.useToken();
@@ -19,7 +17,6 @@ export default function Home() {
       justifyContent: 'center', 
       alignItems: 'center', 
       minHeight: '100vh', 
-      // 3. Bây giờ có biến rồi thì mới xài ở đây được
       backgroundColor: colorBgLayout, 
       padding: '20px',
       transition: 'background-color 0.3s ease'
