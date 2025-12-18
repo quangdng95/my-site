@@ -21,7 +21,7 @@ export default function RootLayout({
       {/* style={{ margin: 0 }} notes không bị hở trắng */}
       <body className={inter.className} style={{ margin: 0 }}>
         <AntdRegistry>
-           {/* Gắn bộ chuyển đổi theme vào đây */}
+           {/* Gắn bộ chuyển đổi theme */}
            <ThemeSwitch>
               {children}
            </ThemeSwitch>

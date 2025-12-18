@@ -4772,7 +4772,7 @@ export const AppTheme: any = {
     }
   }
 };
-// 2. QUAN TRỌNG: Xuất ra một cái mặc định để Web nó chạy
+// 2. QUAN TRỌNG: 
 // Hiện tại mình cho nó chạy Light trước nha
 const theme: ThemeConfig = AppTheme.light;
 

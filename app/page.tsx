@@ -24,7 +24,7 @@ export default function Home() {
       <Card style={{ width: 500, textAlign: 'center', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }}>
         
         <Title level={2} style={{ marginBottom: 0 }}>
-          Xin chào Designer! 👋
+          Xin chào! 👋
         </Title>
         
         <Paragraph style={{ marginTop: 10, marginBottom: 24, fontSize: '16px' }}>
