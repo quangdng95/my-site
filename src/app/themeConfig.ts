@@ -374,7 +374,7 @@ export const AppTheme: any = {
   },
   "components": {
     "Alert": {
-      "borderRadiusLG": 8,
+      "borderRadiusLG": 10,
       "colorError": "#ff4d4f",
       "colorErrorBg": "#fff2f0",
       "colorErrorBorder": "#ffccc7",
@@ -419,9 +419,9 @@ export const AppTheme: any = {
       "paddingXXS": 4
     },
     "AutoComplete": {
-      "borderRadius": 6,
-      "borderRadiusLG": 8,
-      "borderRadiusSM": 4,
+      "borderRadius": 8,
+      "borderRadiusLG": 10,
+      "borderRadiusSM": 6,
       "borderRadiusXS": 2,
       "colorBgContainer": "#ffffff",
       "colorBgContainerDisabled": "rgba(26, 26, 26, 0.04)",
@@ -469,9 +469,9 @@ export const AppTheme: any = {
       "paddingXXS": 4
     },
     "Avatar": {
-      "borderRadius": 6,
-      "borderRadiusLG": 8,
-      "borderRadiusSM": 4,
+      "borderRadius": 8,
+      "borderRadiusLG": 10,
+      "borderRadiusSM": 6,
       "colorBorderBg": "#ffffff",
       "colorText": "rgba(26, 26, 26, 0.92)",
       "colorTextLightSolid": "#ffffff",
@@ -493,7 +493,7 @@ export const AppTheme: any = {
       "textFontSizeSM": 14
     },
     "Badge": {
-      "borderRadiusSM": 4,
+      "borderRadiusSM": 6,
       "colorBgContainer": "#ffffff",
       "colorBorderBg": "#ffffff",
       "colorError": "#ff4d4f",
@@ -506,7 +506,7 @@ export const AppTheme: any = {
       "colorWarning": "#faad14",
       "dotSize": 6,
       "fontFamily": "Inter",
-      "fontHeight": 22,
+      "fontHeight": 20,
       "fontSize": 14,
       "fontSizeSM": 12,
       "indicatorHeight": 24,
@@ -520,11 +520,11 @@ export const AppTheme: any = {
       "textFontSizeSM": 12
     },
     "Breadcrumb": {
-      "borderRadiusSM": 4,
+      "borderRadiusSM": 6,
       "colorBgTextHover": "rgba(26, 26, 26, 0.06)",
       "colorPrimaryBorder": "#96f7e5",
       "fontFamily": "Inter",
-      "fontHeight": 22,
+      "fontHeight": 20,
       "fontSize": 14,
       "fontSizeIcon": 12,
       "iconFontSize": 14,
@@ -542,9 +542,9 @@ export const AppTheme: any = {
     },
     "Button": {
       "borderColorDisabled": "#d9d9d9",
-      "borderRadius": 6,
-      "borderRadiusLG": 8,
-      "borderRadiusSM": 4,
+      "borderRadius": 8,
+      "borderRadiusLG": 10,
+      "borderRadiusSM": 6,
       "colorBgContainer": "#ffffff",
       "colorBgContainerDisabled": "rgba(26, 26, 26, 0.04)",
       "colorBgSolid": "#000000",
@@ -616,8 +616,8 @@ export const AppTheme: any = {
       "textTextHoverColor": "rgba(26, 26, 26, 0.76)"
     },
     "Calendar": {
-      "borderRadiusLG": 8,
-      "borderRadiusSM": 4,
+      "borderRadiusLG": 10,
+      "borderRadiusSM": 6,
       "colorBgContainer": "#ffffff",
       "colorBgContainerDisabled": "rgba(26, 26, 26, 0.04)",
       "colorIcon": "rgba(26, 26, 26, 0.56)",
@@ -659,9 +659,9 @@ export const AppTheme: any = {
       "yearControlWidth": 80
     },
     "Card": {
-      "bodyPadding": 24,
-      "bodyPaddingSM": 12,
-      "borderRadiusLG": 8,
+      "bodyPadding": 16,
+      "bodyPaddingSM": 16,
+      "borderRadiusLG": 12,
       "colorBgContainer": "#ffffff",
       "colorBorderSecondary": "#f0f0f0",
       "colorFillAlter": "rgba(26, 26, 26, 0.02)",
@@ -670,7 +670,7 @@ export const AppTheme: any = {
       "colorTextDescription": "rgba(26, 26, 26, 0.56)",
       "colorTextHeading": "rgba(26, 26, 26, 0.92)",
       "fontFamily": "Inter",
-      "fontHeight": 22,
+      "fontHeight": 20,
       "fontSize": 14,
       "fontSizeLG": 16,
       "fontWeightStrong": 600,
@@ -679,7 +679,7 @@ export const AppTheme: any = {
       "headerFontSizeSM": 14,
       "headerHeight": 56,
       "headerHeightSM": 38,
-      "headerPadding": 24,
+      "headerPadding": 16,
       "headerPaddingSM": 12,
       "lineHeight": 1.4285714285714286,
       "lineHeightLG": 1.5,
@@ -705,8 +705,8 @@ export const AppTheme: any = {
       "marginXXS": 4
     },
     "Cascader": {
-      "borderRadiusLG": 8,
-      "borderRadiusSM": 4,
+      "borderRadiusLG": 10,
+      "borderRadiusSM": 6,
       "colorBgContainer": "#ffffff",
       "colorBgContainerDisabled": "rgba(26, 26, 26, 0.04)",
       "colorBorder": "#d9d9d9",
@@ -744,7 +744,7 @@ export const AppTheme: any = {
       "paddingXXS": 4
     },
     "Checkbox": {
-      "borderRadiusSM": 4,
+      "borderRadiusSM": 6,
       "colorBgContainer": "#ffffff",
       "colorBgContainerDisabled": "rgba(26, 26, 26, 0.04)",
       "colorBorder": "#d9d9d9",
@@ -766,7 +766,7 @@ export const AppTheme: any = {
       "paddingXS": 8
     },
     "Collapse": {
-      "borderRadiusLG": 8,
+      "borderRadiusLG": 10,
       "colorBgContainer": "#ffffff",
       "colorBorder": "#d9d9d9",
       "colorFillAlter": "rgba(26, 26, 26, 0.02)",
@@ -775,7 +775,7 @@ export const AppTheme: any = {
       "colorTextHeading": "rgba(26, 26, 26, 0.92)",
       "contentBg": "#ffffff",
       "fontFamily": "Inter",
-      "fontHeight": 22,
+      "fontHeight": 20,
       "fontHeightLG": 24,
       "fontSize": 14,
       "fontSizeIcon": 12,
@@ -794,9 +794,9 @@ export const AppTheme: any = {
     "DatePicker": {
       "activeBg": "#ffffff",
       "activeBorderColor": "#1677ff",
-      "borderRadius": 6,
-      "borderRadiusLG": 8,
-      "borderRadiusSM": 4,
+      "borderRadius": 8,
+      "borderRadiusLG": 10,
+      "borderRadiusSM": 6,
       "borderRadiusXS": 2,
       "cellActiveWithRangeBg": "#e6f4ff",
       "cellBgDisabled": "rgba(26, 26, 26, 0.04)",
@@ -850,7 +850,7 @@ export const AppTheme: any = {
       "controlPaddingHorizontal": 12,
       "controlPaddingHorizontalSM": 8,
       "fontFamily": "Inter",
-      "fontHeight": 22,
+      "fontHeight": 20,
       "fontHeightLG": 24,
       "fontSize": 14,
       "fontSizeLG": 16,
@@ -894,7 +894,7 @@ export const AppTheme: any = {
       "withoutTimeCellHeight": 66
     },
     "Descriptions": {
-      "borderRadiusLG": 8,
+      "borderRadiusLG": 10,
       "colorFillAlter": "rgba(26, 26, 26, 0.02)",
       "colorSplit": "rgba(0, 0, 0, 0.08)",
       "colorText": "rgba(26, 26, 26, 0.92)",
@@ -951,8 +951,8 @@ export const AppTheme: any = {
       "paddingXS": 8
     },
     "Dropdown": {
-      "borderRadiusLG": 8,
-      "borderRadiusSM": 4,
+      "borderRadiusLG": 10,
+      "borderRadiusSM": 6,
       "borderRadiusXS": 2,
       "colorBgElevated": "#ffffff",
       "colorError": "#ff4d4f",
@@ -988,8 +988,8 @@ export const AppTheme: any = {
       "lineHeight": 1.4285714285714286
     },
     "FloatButton": {
-      "borderRadiusLG": 8,
-      "borderRadiusSM": 4,
+      "borderRadiusLG": 10,
+      "borderRadiusSM": 6,
       "colorBgElevated": "#ffffff",
       "colorFillContent": "rgba(26, 26, 26, 0.06)",
       "colorPrimary": "#0d9585",
@@ -1028,7 +1028,7 @@ export const AppTheme: any = {
       "fontFamily": "Inter",
       "fontSize": 14,
       "fontSizeLG": 16,
-      "itemMarginBottom": 24,
+      "itemMarginBottom": 0,
       "labelColonMarginInlineEnd": 8,
       "labelColonMarginInlineStart": 2,
       "labelColor": "rgba(26, 26, 26, 0.92)",
@@ -1134,9 +1134,9 @@ export const AppTheme: any = {
       "activeBg": "#ffffff",
       "activeBorderColor": "#1677ff",
       "addonBg": "rgba(26, 26, 26, 0.02)",
-      "borderRadius": 6,
-      "borderRadiusLG": 8,
-      "borderRadiusSM": 4,
+      "borderRadius": 8,
+      "borderRadiusLG": 10,
+      "borderRadiusSM": 6,
       "colorBgContainer": "#ffffff",
       "colorBgContainerDisabled": "rgba(26, 26, 26, 0.04)",
       "colorBorder": "#d9d9d9",
@@ -1174,7 +1174,7 @@ export const AppTheme: any = {
       "handleBg": "#ffffff",
       "handleBorderColor": "#d9d9d9",
       "handleHoverColor": "#1677ff",
-      "handleWidth": 22,
+      "handleWidth": 20,
       "hoverBg": "#ffffff",
       "hoverBorderColor": "#4096ff",
       "inputFontSize": 14,
@@ -1195,7 +1195,7 @@ export const AppTheme: any = {
     },
     "Layout": {
       "bodyBg": "#f5f5f5",
-      "borderRadius": 6,
+      "borderRadius": 8,
       "colorText": "rgba(26, 26, 26, 0.92)",
       "fontSize": 14,
       "fontSizeXL": 20,
@@ -1215,7 +1215,7 @@ export const AppTheme: any = {
     },
     "List": {
       "avatarMarginRight": 16,
-      "borderRadiusLG": 8,
+      "borderRadiusLG": 10,
       "colorBorder": "#d9d9d9",
       "colorPrimary": "#0d9585",
       "colorSplit": "rgba(0, 0, 0, 0.08)",
@@ -1258,7 +1258,7 @@ export const AppTheme: any = {
     },
     "Menu": {
       "activeBarBorderWidth": 1,
-      "borderRadius": 6,
+      "borderRadius": 8,
       "collapsedIconSize": 16,
       "collapsedWidth": 80,
       "colorBgContainer": "#ffffff",
@@ -1323,7 +1323,7 @@ export const AppTheme: any = {
       "subMenuItemSelectedColor": "#0d9585"
     },
     "Message": {
-      "borderRadiusLG": 8,
+      "borderRadiusLG": 10,
       "colorError": "#ff4d4f",
       "colorInfo": "#1677ff",
       "colorSuccess": "#1ac057",
@@ -1340,8 +1340,8 @@ export const AppTheme: any = {
       "paddingXS": 8
     },
     "Modal": {
-      "borderRadiusLG": 8,
-      "borderRadiusSM": 4,
+      "borderRadiusLG": 10,
+      "borderRadiusSM": 6,
       "colorBgMask": "rgba(0, 0, 0, 0.45)",
       "colorIcon": "rgba(26, 26, 26, 0.56)",
       "colorIconHover": "rgba(26, 26, 26, 0.92)",
@@ -1352,7 +1352,7 @@ export const AppTheme: any = {
       "colorWarning": "#faad14",
       "contentBg": "#ffffff",
       "fontFamily": "Inter",
-      "fontHeight": 22,
+      "fontHeight": 20,
       "fontSize": 14,
       "fontSizeHeading5": 16,
       "fontSizeLG": 16,
@@ -1378,8 +1378,8 @@ export const AppTheme: any = {
       "titleLineHeight": 1.25
     },
     "Notification": {
-      "borderRadiusLG": 8,
-      "borderRadiusSM": 4,
+      "borderRadiusLG": 10,
+      "borderRadiusSM": 6,
       "colorBgElevated": "#ffffff",
       "colorError": "#ff4d4f",
       "colorIcon": "rgba(26, 26, 26, 0.56)",
@@ -1406,9 +1406,9 @@ export const AppTheme: any = {
       "width": 384
     },
     "Pagination": {
-      "borderRadius": 6,
-      "borderRadiusLG": 8,
-      "borderRadiusSM": 4,
+      "borderRadius": 8,
+      "borderRadiusLG": 10,
+      "borderRadiusSM": 6,
       "colorBgContainer": "#ffffff",
       "colorBgContainerDisabled": "rgba(26, 26, 26, 0.04)",
       "colorBgTextActive": "rgba(26, 26, 26, 0.15)",
@@ -1467,7 +1467,7 @@ export const AppTheme: any = {
       "marginXXS": 4
     },
     "Popover": {
-      "borderRadiusLG": 8,
+      "borderRadiusLG": 10,
       "borderRadiusXS": 2,
       "colorBgElevated": "#ffffff",
       "colorSplit": "rgba(0, 0, 0, 0.08)",
@@ -1503,7 +1503,7 @@ export const AppTheme: any = {
       "remainingColor": "rgba(26, 26, 26, 0.06)"
     },
     "QRCode": {
-      "borderRadiusLG": 8,
+      "borderRadiusLG": 10,
       "colorSplit": "rgba(0, 0, 0, 0.08)",
       "colorText": "rgba(26, 26, 26, 0.92)",
       "colorWhite": "#ffffff",
@@ -1516,9 +1516,9 @@ export const AppTheme: any = {
       "paddingSM": 12
     },
     "Radio": {
-      "borderRadius": 6,
-      "borderRadiusLG": 8,
-      "borderRadiusSM": 4,
+      "borderRadius": 8,
+      "borderRadiusLG": 10,
+      "borderRadiusSM": 6,
       "buttonBg": "#ffffff",
       "buttonCheckedBg": "#ffffff",
       "buttonCheckedBgDisabled": "rgba(26, 26, 26, 0.15)",
@@ -1595,9 +1595,9 @@ export const AppTheme: any = {
       "titleFontSize": 24
     },
     "Segmented": {
-      "borderRadius": 6,
-      "borderRadiusLG": 8,
-      "borderRadiusSM": 4,
+      "borderRadius": 8,
+      "borderRadiusLG": 10,
+      "borderRadiusSM": 6,
       "borderRadiusXS": 2,
       "colorBgElevated": "#ffffff",
       "colorBgLayout": "#f5f5f5",
@@ -1632,9 +1632,9 @@ export const AppTheme: any = {
     },
     "Select": {
       "activeBorderColor": "#1677ff",
-      "borderRadius": 6,
-      "borderRadiusLG": 8,
-      "borderRadiusSM": 4,
+      "borderRadius": 8,
+      "borderRadiusLG": 10,
+      "borderRadiusSM": 6,
       "borderRadiusXS": 2,
       "clearBg": "#ffffff",
       "colorBgContainer": "#ffffff",
@@ -1836,7 +1836,7 @@ export const AppTheme: any = {
       "titleFontSize": 14
     },
     "Steps": {
-      "borderRadiusSM": 4,
+      "borderRadiusSM": 6,
       "colorBgContainer": "#ffffff",
       "colorBorderBg": "#ffffff",
       "colorBorderSecondary": "#f0f0f0",
@@ -1915,8 +1915,8 @@ export const AppTheme: any = {
     "Table": {
       "bodySortBg": "#fafafa",
       "borderColor": "#f0f0f0",
-      "borderRadius": 6,
-      "borderRadiusLG": 8,
+      "borderRadius": 8,
+      "borderRadiusLG": 10,
       "cellFontSize": 14,
       "cellFontSizeMD": 14,
       "cellFontSizeSM": 14,
@@ -1977,8 +1977,8 @@ export const AppTheme: any = {
       "stickyScrollBarBorderRadius": 100
     },
     "Tabs": {
-      "borderRadius": 6,
-      "borderRadiusLG": 8,
+      "borderRadius": 8,
+      "borderRadiusLG": 10,
       "cardBg": "rgba(26, 26, 26, 0.02)",
       "cardGutter": 2,
       "cardHeight": 44,
@@ -2025,7 +2025,7 @@ export const AppTheme: any = {
       "titleFontSizeSM": 14
     },
     "Tag": {
-      "borderRadiusSM": 4,
+      "borderRadiusSM": 6,
       "borderRadiusXL": 10,
       "colorBorder": "#d9d9d9",
       "colorErrorBg": "#fff2f0",
@@ -2062,9 +2062,9 @@ export const AppTheme: any = {
     "TimePicker": {
       "activeBg": "#ffffff",
       "activeBorderColor": "#1677ff",
-      "borderRadius": 6,
-      "borderRadiusLG": 8,
-      "borderRadiusSM": 4,
+      "borderRadius": 8,
+      "borderRadiusLG": 10,
+      "borderRadiusSM": 6,
       "borderRadiusXS": 2,
       "cellActiveWithRangeBg": "#e6f4ff",
       "cellBgDisabled": "rgba(26, 26, 26, 0.04)",
@@ -2176,7 +2176,7 @@ export const AppTheme: any = {
       "tailColor": "rgba(0, 0, 0, 0.08)"
     },
     "Tooltip": {
-      "borderRadius": 6,
+      "borderRadius": 8,
       "borderRadiusXS": 2,
       "colorBgSpotlight": "rgba(0, 0, 0, 0.85)",
       "colorText": "rgba(26, 26, 26, 0.92)",
@@ -2190,11 +2190,11 @@ export const AppTheme: any = {
       "sizePopupArrow": 16
     },
     "Tour": {
-      "borderRadius": 6,
-      "borderRadiusLG": 8,
-      "borderRadiusSM": 4,
+      "borderRadius": 8,
+      "borderRadiusLG": 10,
+      "borderRadiusSM": 6,
       "borderRadiusXS": 2,
-      "closeBtnSize": 22,
+      "closeBtnSize": 28,
       "colorBgElevated": "#ffffff",
       "colorBgTextHover": "rgba(26, 26, 26, 0.06)",
       "colorFill": "rgba(26, 26, 26, 0.15)",
@@ -2217,7 +2217,7 @@ export const AppTheme: any = {
       "sizePopupArrow": 16
     },
     "Transfer": {
-      "borderRadiusLG": 8,
+      "borderRadiusLG": 10,
       "colorBgContainer": "#ffffff",
       "colorBgContainerDisabled": "rgba(26, 26, 26, 0.04)",
       "colorBorder": "#d9d9d9",
@@ -2250,9 +2250,9 @@ export const AppTheme: any = {
       "paddingXS": 8
     },
     "Tree": {
-      "borderRadius": 6,
-      "borderRadiusLG": 8,
-      "borderRadiusSM": 4,
+      "borderRadius": 8,
+      "borderRadiusLG": 10,
+      "borderRadiusSM": 6,
       "colorBgContainer": "#ffffff",
       "colorBgContainerDisabled": "rgba(26, 26, 26, 0.04)",
       "colorBorder": "#d9d9d9",
@@ -2288,9 +2288,9 @@ export const AppTheme: any = {
       "titleHeight": 28
     },
     "TreeSelect": {
-      "borderRadius": 6,
-      "borderRadiusLG": 8,
-      "borderRadiusSM": 4,
+      "borderRadius": 8,
+      "borderRadiusLG": 10,
+      "borderRadiusSM": 6,
       "colorBgContainer": "#ffffff",
       "colorBgContainerDisabled": "rgba(26, 26, 26, 0.04)",
       "colorBgElevated": "#ffffff",
@@ -2352,7 +2352,7 @@ export const AppTheme: any = {
       "paddingSM": 12
     },
     "Upload": {
-      "borderRadiusLG": 8,
+      "borderRadiusLG": 10,
       "colorBgMask": "rgba(0, 0, 0, 0.45)",
       "colorBorder": "#d9d9d9",
       "colorError": "#ff4d4f",
@@ -2368,7 +2368,7 @@ export const AppTheme: any = {
       "controlHeightLG": 44,
       "controlItemBgHover": "rgba(26, 26, 26, 0.04)",
       "fontFamily": "Inter",
-      "fontHeight": 22,
+      "fontHeight": 20,
       "fontHeightSM": 20,
       "fontSize": 14,
       "fontSizeHeading2": 32,
@@ -2637,9 +2637,9 @@ export const AppTheme: any = {
     "8%": "rgba(20, 20, 20, 0.24)",
     "80%": "rgba(20, 20, 20, 0.9)",
     "background": "rgba(41, 41, 41, 0.3)",
-    "borderRadius": 6,
-    "borderRadiusLG": 8,
-    "borderRadiusSM": 4,
+    "borderRadius": 8,
+    "borderRadiusLG": 10,
+    "borderRadiusSM": 6,
     "borderRadiusXL": 10,
     "borderRadiusXS": 2,
     "borderRadiusXXL*": 12,
@@ -2758,7 +2758,7 @@ export const AppTheme: any = {
   },
   "components": {
     "Alert": {
-      "borderRadiusLG": 8,
+      "borderRadiusLG": 10,
       "colorError": "#dc4446",
       "colorErrorBg": "#2c1618",
       "colorErrorBorder": "#5b2526",
@@ -2803,9 +2803,9 @@ export const AppTheme: any = {
       "paddingXXS": 4
     },
     "AutoComplete": {
-      "borderRadius": 6,
-      "borderRadiusLG": 8,
-      "borderRadiusSM": 4,
+      "borderRadius": 8,
+      "borderRadiusLG": 10,
+      "borderRadiusSM": 6,
       "borderRadiusXS": 2,
       "colorBgContainer": "#141414",
       "colorBgContainerDisabled": "rgba(255, 255, 255, 0.08)",
@@ -2853,9 +2853,9 @@ export const AppTheme: any = {
       "paddingXXS": 4
     },
     "Avatar": {
-      "borderRadius": 6,
-      "borderRadiusLG": 8,
-      "borderRadiusSM": 4,
+      "borderRadius": 8,
+      "borderRadiusLG": 10,
+      "borderRadiusSM": 6,
       "colorBorderBg": "#141414",
       "colorText": "rgba(255, 255, 255, 0.86)",
       "colorTextLightSolid": "#ffffff",
@@ -2877,7 +2877,7 @@ export const AppTheme: any = {
       "textFontSizeSM": 14
     },
     "Badge": {
-      "borderRadiusSM": 4,
+      "borderRadiusSM": 6,
       "colorBgContainer": "#141414",
       "colorBorderBg": "#141414",
       "colorError": "#dc4446",
@@ -2890,7 +2890,7 @@ export const AppTheme: any = {
       "colorWarning": "#d89614",
       "dotSize": 6,
       "fontFamily": "Inter",
-      "fontHeight": 22,
+      "fontHeight": 20,
       "fontSize": 14,
       "fontSizeSM": 12,
       "indicatorHeight": 24,
@@ -2904,11 +2904,11 @@ export const AppTheme: any = {
       "textFontSizeSM": 12
     },
     "Breadcrumb": {
-      "borderRadiusSM": 4,
+      "borderRadiusSM": 6,
       "colorBgTextHover": "rgba(255, 255, 255, 0.12)",
       "colorPrimaryBorder": "#0a4c44",
       "fontFamily": "Inter",
-      "fontHeight": 22,
+      "fontHeight": 20,
       "fontSize": 14,
       "fontSizeIcon": 12,
       "iconFontSize": 14,
@@ -2926,9 +2926,9 @@ export const AppTheme: any = {
     },
     "Button": {
       "borderColorDisabled": "#424242",
-      "borderRadius": 6,
-      "borderRadiusLG": 8,
-      "borderRadiusSM": 4,
+      "borderRadius": 8,
+      "borderRadiusLG": 10,
+      "borderRadiusSM": 6,
       "colorBgContainer": "#141414",
       "colorBgContainerDisabled": "rgba(255, 255, 255, 0.08)",
       "colorBgSolid": "rgba(255, 255, 255, 0.95)",
@@ -3000,8 +3000,8 @@ export const AppTheme: any = {
       "textTextHoverColor": "rgba(255, 255, 255, 0.68)"
     },
     "Calendar": {
-      "borderRadiusLG": 8,
-      "borderRadiusSM": 4,
+      "borderRadiusLG": 10,
+      "borderRadiusSM": 6,
       "colorBgContainer": "#141414",
       "colorBgContainerDisabled": "rgba(255, 255, 255, 0.08)",
       "colorIcon": "rgba(255, 255, 255, 0.48)",
@@ -3045,7 +3045,7 @@ export const AppTheme: any = {
     "Card": {
       "bodyPadding": 24,
       "bodyPaddingSM": 12,
-      "borderRadiusLG": 8,
+      "borderRadiusLG": 10,
       "colorBgContainer": "#141414",
       "colorBorderSecondary": "#303030",
       "colorFillAlter": "rgba(255, 255, 255, 0.04)",
@@ -3054,7 +3054,7 @@ export const AppTheme: any = {
       "colorTextDescription": "rgba(255, 255, 255, 0.48)",
       "colorTextHeading": "rgba(255, 255, 255, 0.86)",
       "fontFamily": "Inter",
-      "fontHeight": 22,
+      "fontHeight": 20,
       "fontSize": 14,
       "fontSizeLG": 16,
       "fontWeightStrong": 600,
@@ -3089,8 +3089,8 @@ export const AppTheme: any = {
       "marginXXS": 4
     },
     "Cascader": {
-      "borderRadiusLG": 8,
-      "borderRadiusSM": 4,
+      "borderRadiusLG": 10,
+      "borderRadiusSM": 6,
       "colorBgContainer": "#141414",
       "colorBgContainerDisabled": "rgba(255, 255, 255, 0.08)",
       "colorBorder": "#424242",
@@ -3128,7 +3128,7 @@ export const AppTheme: any = {
       "paddingXXS": 4
     },
     "Checkbox": {
-      "borderRadiusSM": 4,
+      "borderRadiusSM": 6,
       "colorBgContainer": "#141414",
       "colorBgContainerDisabled": "rgba(255, 255, 255, 0.08)",
       "colorBorder": "#424242",
@@ -3150,7 +3150,7 @@ export const AppTheme: any = {
       "paddingXS": 8
     },
     "Collapse": {
-      "borderRadiusLG": 8,
+      "borderRadiusLG": 10,
       "colorBgContainer": "#141414",
       "colorBorder": "#424242",
       "colorFillAlter": "rgba(255, 255, 255, 0.04)",
@@ -3159,7 +3159,7 @@ export const AppTheme: any = {
       "colorTextHeading": "rgba(255, 255, 255, 0.86)",
       "contentBg": "#141414",
       "fontFamily": "Inter",
-      "fontHeight": 22,
+      "fontHeight": 20,
       "fontHeightLG": 24,
       "fontSize": 14,
       "fontSizeIcon": 12,
@@ -3178,9 +3178,9 @@ export const AppTheme: any = {
     "DatePicker": {
       "activeBg": "#141414",
       "activeBorderColor": "#1668dc",
-      "borderRadius": 6,
-      "borderRadiusLG": 8,
-      "borderRadiusSM": 4,
+      "borderRadius": 8,
+      "borderRadiusLG": 10,
+      "borderRadiusSM": 6,
       "borderRadiusXS": 2,
       "cellActiveWithRangeBg": "#112545",
       "cellBgDisabled": "rgba(255, 255, 255, 0.08)",
@@ -3234,7 +3234,7 @@ export const AppTheme: any = {
       "controlPaddingHorizontal": 12,
       "controlPaddingHorizontalSM": 8,
       "fontFamily": "Inter",
-      "fontHeight": 22,
+      "fontHeight": 20,
       "fontHeightLG": 24,
       "fontSize": 14,
       "fontSizeLG": 16,
@@ -3278,7 +3278,7 @@ export const AppTheme: any = {
       "withoutTimeCellHeight": 66
     },
     "Descriptions": {
-      "borderRadiusLG": 8,
+      "borderRadiusLG": 10,
       "colorFillAlter": "rgba(255, 255, 255, 0.04)",
       "colorSplit": "rgba(255, 255, 255, 0.08)",
       "colorText": "rgba(255, 255, 255, 0.86)",
@@ -3335,8 +3335,8 @@ export const AppTheme: any = {
       "paddingXS": 8
     },
     "Dropdown": {
-      "borderRadiusLG": 8,
-      "borderRadiusSM": 4,
+      "borderRadiusLG": 10,
+      "borderRadiusSM": 6,
       "borderRadiusXS": 2,
       "colorBgElevated": "#1f1f1f",
       "colorError": "#dc4446",
@@ -3372,8 +3372,8 @@ export const AppTheme: any = {
       "lineHeight": 1.4285714285714286
     },
     "FloatButton": {
-      "borderRadiusLG": 8,
-      "borderRadiusSM": 4,
+      "borderRadiusLG": 10,
+      "borderRadiusSM": 6,
       "colorBgElevated": "#1f1f1f",
       "colorFillContent": "rgba(255, 255, 255, 0.12)",
       "colorPrimary": "#13a48e",
@@ -3454,9 +3454,9 @@ export const AppTheme: any = {
       "activeBg": "#141414",
       "activeBorderColor": "#1668dc",
       "addonBg": "rgba(255, 255, 255, 0.04)",
-      "borderRadius": 6,
-      "borderRadiusLG": 8,
-      "borderRadiusSM": 4,
+      "borderRadius": 8,
+      "borderRadiusLG": 10,
+      "borderRadiusSM": 6,
       "colorBgContainer": "#141414",
       "colorBgContainerDisabled": "rgba(255, 255, 255, 0.08)",
       "colorBorder": "#424242",
@@ -3518,9 +3518,9 @@ export const AppTheme: any = {
       "activeBg": "#141414",
       "activeBorderColor": "#1668dc",
       "addonBg": "rgba(255, 255, 255, 0.04)",
-      "borderRadius": 6,
-      "borderRadiusLG": 8,
-      "borderRadiusSM": 4,
+      "borderRadius": 8,
+      "borderRadiusLG": 10,
+      "borderRadiusSM": 6,
       "colorBgContainer": "#141414",
       "colorBgContainerDisabled": "rgba(255, 255, 255, 0.08)",
       "colorBorder": "#424242",
@@ -3579,7 +3579,7 @@ export const AppTheme: any = {
     },
     "Layout": {
       "bodyBg": "#0f0f0f",
-      "borderRadius": 6,
+      "borderRadius": 8,
       "colorText": "rgba(255, 255, 255, 0.86)",
       "fontSize": 14,
       "fontSizeXL": 20,
@@ -3599,7 +3599,7 @@ export const AppTheme: any = {
     },
     "List": {
       "avatarMarginRight": 16,
-      "borderRadiusLG": 8,
+      "borderRadiusLG": 10,
       "colorBorder": "#424242",
       "colorPrimary": "#13a48e",
       "colorSplit": "rgba(255, 255, 255, 0.08)",
@@ -3642,7 +3642,7 @@ export const AppTheme: any = {
     },
     "Menu": {
       "activeBarBorderWidth": 1,
-      "borderRadius": 6,
+      "borderRadius": 8,
       "collapsedIconSize": 16,
       "collapsedWidth": 80,
       "colorBgContainer": "#141414",
@@ -3707,7 +3707,7 @@ export const AppTheme: any = {
       "subMenuItemSelectedColor": "#13a48e"
     },
     "Message": {
-      "borderRadiusLG": 8,
+      "borderRadiusLG": 10,
       "colorError": "#dc4446",
       "colorInfo": "#1668dc",
       "colorSuccess": "#1ab24d",
@@ -3724,8 +3724,8 @@ export const AppTheme: any = {
       "paddingXS": 8
     },
     "Modal": {
-      "borderRadiusLG": 8,
-      "borderRadiusSM": 4,
+      "borderRadiusLG": 10,
+      "borderRadiusSM": 6,
       "colorBgMask": "rgba(0, 0, 0, 0.45)",
       "colorIcon": "rgba(255, 255, 255, 0.48)",
       "colorIconHover": "rgba(255, 255, 255, 0.86)",
@@ -3736,7 +3736,7 @@ export const AppTheme: any = {
       "colorWarning": "#d89614",
       "contentBg": "#1f1f1f",
       "fontFamily": "Inter",
-      "fontHeight": 22,
+      "fontHeight": 20,
       "fontSize": 14,
       "fontSizeHeading5": 16,
       "fontSizeLG": 16,
@@ -3762,8 +3762,8 @@ export const AppTheme: any = {
       "titleLineHeight": 1.25
     },
     "Notification": {
-      "borderRadiusLG": 8,
-      "borderRadiusSM": 4,
+      "borderRadiusLG": 10,
+      "borderRadiusSM": 6,
       "colorBgElevated": "#1f1f1f",
       "colorError": "#dc4446",
       "colorIcon": "rgba(255, 255, 255, 0.48)",
@@ -3790,9 +3790,9 @@ export const AppTheme: any = {
       "width": 384
     },
     "Pagination": {
-      "borderRadius": 6,
-      "borderRadiusLG": 8,
-      "borderRadiusSM": 4,
+      "borderRadius": 8,
+      "borderRadiusLG": 10,
+      "borderRadiusSM": 6,
       "colorBgContainer": "#141414",
       "colorBgContainerDisabled": "rgba(255, 255, 255, 0.08)",
       "colorBgTextActive": "rgba(255, 255, 255, 0.18)",
@@ -3851,7 +3851,7 @@ export const AppTheme: any = {
       "marginXXS": 4
     },
     "Popover": {
-      "borderRadiusLG": 8,
+      "borderRadiusLG": 10,
       "borderRadiusXS": 2,
       "colorBgElevated": "#1f1f1f",
       "colorSplit": "rgba(255, 255, 255, 0.08)",
@@ -3887,7 +3887,7 @@ export const AppTheme: any = {
       "remainingColor": "rgba(255, 255, 255, 0.12)"
     },
     "QRCode": {
-      "borderRadiusLG": 8,
+      "borderRadiusLG": 10,
       "colorSplit": "rgba(255, 255, 255, 0.08)",
       "colorText": "rgba(255, 255, 255, 0.86)",
       "colorWhite": "#ffffff",
@@ -3900,9 +3900,9 @@ export const AppTheme: any = {
       "paddingSM": 12
     },
     "Radio": {
-      "borderRadius": 6,
-      "borderRadiusLG": 8,
-      "borderRadiusSM": 4,
+      "borderRadius": 8,
+      "borderRadiusLG": 10,
+      "borderRadiusSM": 6,
       "buttonBg": "#141414",
       "buttonCheckedBg": "#141414",
       "buttonCheckedBgDisabled": "rgba(255, 255, 255, 0.18)",
@@ -3979,9 +3979,9 @@ export const AppTheme: any = {
       "titleFontSize": 24
     },
     "Segmented": {
-      "borderRadius": 6,
-      "borderRadiusLG": 8,
-      "borderRadiusSM": 4,
+      "borderRadius": 8,
+      "borderRadiusLG": 10,
+      "borderRadiusSM": 6,
       "borderRadiusXS": 2,
       "colorBgElevated": "#1f1f1f",
       "colorBgLayout": "#0f0f0f",
@@ -4016,9 +4016,9 @@ export const AppTheme: any = {
     },
     "Select": {
       "activeBorderColor": "#1668dc",
-      "borderRadius": 6,
-      "borderRadiusLG": 8,
-      "borderRadiusSM": 4,
+      "borderRadius": 8,
+      "borderRadiusLG": 10,
+      "borderRadiusSM": 6,
       "borderRadiusXS": 2,
       "clearBg": "#141414",
       "colorBgContainer": "#141414",
@@ -4220,7 +4220,7 @@ export const AppTheme: any = {
       "titleFontSize": 14
     },
     "Steps": {
-      "borderRadiusSM": 4,
+      "borderRadiusSM": 6,
       "colorBgContainer": "#141414",
       "colorBorderBg": "#141414",
       "colorBorderSecondary": "#303030",
@@ -4299,8 +4299,8 @@ export const AppTheme: any = {
     "Table": {
       "bodySortBg": "#1d1d1d",
       "borderColor": "#303030",
-      "borderRadius": 6,
-      "borderRadiusLG": 8,
+      "borderRadius": 8,
+      "borderRadiusLG": 10,
       "cellFontSize": 14,
       "cellFontSizeMD": 14,
       "cellFontSizeSM": 14,
@@ -4361,8 +4361,8 @@ export const AppTheme: any = {
       "stickyScrollBarBorderRadius": 100
     },
     "Tabs": {
-      "borderRadius": 6,
-      "borderRadiusLG": 8,
+      "borderRadius": 8,
+      "borderRadiusLG": 10,
       "cardBg": "rgba(255, 255, 255, 0.04)",
       "cardGutter": 2,
       "cardHeight": 44,
@@ -4409,7 +4409,7 @@ export const AppTheme: any = {
       "titleFontSizeSM": 14
     },
     "Tag": {
-      "borderRadiusSM": 4,
+      "borderRadiusSM": 6,
       "borderRadiusXL": 10,
       "colorBorder": "#424242",
       "colorErrorBg": "#2c1618",
@@ -4446,9 +4446,9 @@ export const AppTheme: any = {
     "TimePicker": {
       "activeBg": "#141414",
       "activeBorderColor": "#1668dc",
-      "borderRadius": 6,
-      "borderRadiusLG": 8,
-      "borderRadiusSM": 4,
+      "borderRadius": 8,
+      "borderRadiusLG": 10,
+      "borderRadiusSM": 6,
       "borderRadiusXS": 2,
       "cellActiveWithRangeBg": "#112545",
       "cellBgDisabled": "rgba(255, 255, 255, 0.08)",
@@ -4560,7 +4560,7 @@ export const AppTheme: any = {
       "tailColor": "rgba(255, 255, 255, 0.08)"
     },
     "Tooltip": {
-      "borderRadius": 6,
+      "borderRadius": 8,
       "borderRadiusXS": 2,
       "colorBgSpotlight": "#424242",
       "colorText": "rgba(255, 255, 255, 0.86)",
@@ -4574,9 +4574,9 @@ export const AppTheme: any = {
       "sizePopupArrow": 16
     },
     "Tour": {
-      "borderRadius": 6,
-      "borderRadiusLG": 8,
-      "borderRadiusSM": 4,
+      "borderRadius": 8,
+      "borderRadiusLG": 10,
+      "borderRadiusSM": 6,
       "borderRadiusXS": 2,
       "closeBtnSize": 22,
       "colorBgElevated": "#1f1f1f",
@@ -4601,7 +4601,7 @@ export const AppTheme: any = {
       "sizePopupArrow": 16
     },
     "Transfer": {
-      "borderRadiusLG": 8,
+      "borderRadiusLG": 10,
       "colorBgContainer": "#141414",
       "colorBgContainerDisabled": "rgba(255, 255, 255, 0.08)",
       "colorBorder": "#424242",
@@ -4634,9 +4634,9 @@ export const AppTheme: any = {
       "paddingXS": 8
     },
     "Tree": {
-      "borderRadius": 6,
-      "borderRadiusLG": 8,
-      "borderRadiusSM": 4,
+      "borderRadius": 8,
+      "borderRadiusLG": 10,
+      "borderRadiusSM": 6,
       "colorBgContainer": "#141414",
       "colorBgContainerDisabled": "rgba(255, 255, 255, 0.08)",
       "colorBorder": "#424242",
@@ -4672,9 +4672,9 @@ export const AppTheme: any = {
       "titleHeight": 28
     },
     "TreeSelect": {
-      "borderRadius": 6,
-      "borderRadiusLG": 8,
-      "borderRadiusSM": 4,
+      "borderRadius": 8,
+      "borderRadiusLG": 10,
+      "borderRadiusSM": 6,
       "colorBgContainer": "#141414",
       "colorBgContainerDisabled": "rgba(255, 255, 255, 0.08)",
       "colorBgElevated": "#1f1f1f",
@@ -4736,7 +4736,7 @@ export const AppTheme: any = {
       "paddingSM": 12
     },
     "Upload": {
-      "borderRadiusLG": 8,
+      "borderRadiusLG": 10,
       "colorBgMask": "rgba(0, 0, 0, 0.45)",
       "colorBorder": "#424242",
       "colorError": "#dc4446",
@@ -4752,7 +4752,7 @@ export const AppTheme: any = {
       "controlHeightLG": 44,
       "controlItemBgHover": "rgba(255, 255, 255, 0.08)",
       "fontFamily": "Inter",
-      "fontHeight": 22,
+      "fontHeight": 20,
       "fontHeightSM": 20,
       "fontSize": 14,
       "fontSizeHeading2": 32,

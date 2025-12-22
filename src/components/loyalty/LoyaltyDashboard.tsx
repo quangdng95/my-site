@@ -66,7 +66,13 @@ export const LoyaltyDashboard: React.FC = () => {
         <div className={styles.configTabWrapper}>
             
             {/* SECTION A: GENERAL SETTINGS */}
-            <Card title="General Settings" variant="borderless">
+            <Card title="General Settings" variant="borderless"
+            styles={{ 
+                    header: { 
+                        padding: '16px 16px 0px 16px',  
+                        minHeight: 'auto',    
+                        borderBottom: 'none'
+                    }}}>
                 <Form layout="vertical" initialValues={settings}>
                     <Row gutter={16}>
                         <Col span={8}>
@@ -93,7 +99,14 @@ export const LoyaltyDashboard: React.FC = () => {
             </Card>
 
             {/* SECTION B: PARTICIPATING BRANDS */}
-            <Card title="Store Brands & Earning Rules" variant="borderless" styles={{ body: { padding: 0, overflow: 'hidden' } }}>
+            <Card title="Store Brands & Earning Rules" variant="borderless" styles={{ 
+                    header: { 
+                        padding: '16px 16px',  
+                        minHeight: 'auto',    
+                        borderBottom: 'none'
+                    },
+                    body: { padding: 0, overflow: 'hidden' } 
+                    }}>
                 <Table 
                     dataSource={brands} 
                     rowKey="id" 
