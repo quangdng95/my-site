@@ -93,7 +93,7 @@ export const LoyaltyDashboard: React.FC = () => {
             </Card>
 
             {/* SECTION B: PARTICIPATING BRANDS */}
-            <Card title="Store Brands & Earning Rules" variant="borderless">
+            <Card title="Store Brands & Earning Rules" variant="borderless" styles={{ body: { padding: 0, overflow: 'hidden' } }}>
                 <Table 
                     dataSource={brands} 
                     rowKey="id" 
