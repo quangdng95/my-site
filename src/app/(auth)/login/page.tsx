@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { Button, Checkbox, Form, Input, Card, Typography, theme } from 'antd';
-import { UserIcon, LockIcon } from '@/app/components/icons/anticon'; 
+import { UserIcon, LockIcon } from '@/components/icons/anticon'; 
 
 const { Title, Text } = Typography;
 

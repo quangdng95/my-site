@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from 'react';
 import { ThemeProvider as NextThemesProvider, useTheme } from 'next-themes';
 import { ConfigProvider, theme as antdTheme, Button } from 'antd';
-import { AppTheme } from '../themeConfig';
+import { AppTheme } from '@/app/themeConfig';
 
 // 1. Component con: Xử lý Logic đổi màu Antd + Màu nền Web
 const AntdAdapter = ({ children }: { children: React.ReactNode }) => {

@@ -1,4 +1,4 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
+
 import type { ThemeConfig } from 'antd';
 
 // Bao gồm cả Light Mode và Dark Mode nằm riêng biệt để dễ switch
@@ -253,13 +253,13 @@ export const AppTheme: any = {
     "8%": "rgba(58, 58, 58, 0.08)",
     "80%": "rgba(58, 58, 58, 0.8)",
     "background": "rgba(58, 58, 58, 0.12)",
-    "borderRadius": 6,
-    "borderRadiusLG": 8,
-    "borderRadiusSM": 4,
-    "borderRadiusXL": 10,
-    "borderRadiusXS": 2,
-    "borderRadiusXXL*": 12,
-    "borderRadiusXXXL*": 16,
+    "borderRadius": 8,
+    "borderRadiusLG": 10,
+    "borderRadiusSM": 6,
+    "borderRadiusXL": 12,
+    "borderRadiusXS": 4,
+    "borderRadiusXXL*": 16,
+    "borderRadiusXXXL*": 20,
     "borderRounded": 200,
     "cloudfood": "#292929",
     "controlHeight": 36,
