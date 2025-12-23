@@ -5,6 +5,7 @@ export const MOCK_SETTINGS: ProgramSettings = {
     programName: 'Loyalty Customer',
     currencyName: 'Point',
     resetCycle: 'YEARLY',
+    abbr: 'string'
 };
 
 export const MOCK_BRANDS: Brand[] = [
