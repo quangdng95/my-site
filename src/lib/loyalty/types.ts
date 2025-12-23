@@ -10,6 +10,7 @@ export interface ProgramSettings {
     programName: string;
     currencyName: string; // e.g. "Stars", "Coins"
     resetCycle: 'YEARLY' | 'NEVER' | 'ROLLING_12_MONTHS';
+    abbr: string;
 }
 
 export interface Brand {
