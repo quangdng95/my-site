@@ -7,117 +7,187 @@
     padding: 24px;
 }
 
-.pageTitle {
+.headerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.customTabs .ant-tabs-nav {
     margin-bottom: 24px !important;
 }
 
-.pageTitleIcon {
-    margin-right: 12px;
-    color: #1890ff;
-}
-
+/* Configuration Tab */
 .configTabWrapper {
     display: flex;
     flex-direction: column;
     gap: 24px;
 }
 
-/* Brands Table */
-.earningRateRender {
-    display: flex;
-    align-items: center;
-    gap: 8px;
+.sectionCard {
+    background: #ffffff;
+    border: 1px solid #f0f0f0;
+    border-radius: 8px;
 }
 
-.earningRateInput {
-    width: 80px !important;
+/* Program Info Details */
+.iconGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-bottom: 24px;
 }
 
-.earningRateText {
-    font-size: 12px;
-}
-
-/* Tier Cards */
-.tierCard {
-    height: 100%;
-}
-
-.tierHeader {
-    text-align: center;
-    margin-bottom: 16px;
-}
-
-.tierTag {
-    font-size: 14px;
-    padding: 4px 8px;
-    margin-bottom: 8px;
-}
-
-.tierCrownIcon {
-    margin-right: 4px;
-}
-
-.tierPoints {
-    text-align: center;
-    margin-bottom: 16px;
-}
-
-.tierPointsWrapper {
+.iconItem {
+    aspect-ratio: 1;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 8px;
+    background: #f5f5f5;
+    border-radius: 8px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #8c8c8c;
+    transition: all 0.2s;
+}
+
+.iconItem:hover {
+    background: #e6f7ff;
     color: #1890ff;
 }
 
-.tierShieldIcon {
-    font-size: 24px;
+.iconItem.active {
+    background: #e6f7ff;
+    color: #1890ff;
+    border: 1px solid #91caff;
 }
 
-.tierPointsValue {
-    margin: 0 !important;
-    color: #1890ff !important;
+.richTextContainer {
+    border: 1px solid #d9d9d9;
+    border-radius: 6px;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
 }
 
-.tierMultiplier {
-    margin-bottom: 16px;
-    text-align: center;
+.richTextToolbar {
+    padding: 8px 12px;
+    background: #fafafa;
+    border-bottom: 1px solid #f0f0f0;
+    display: flex;
+    gap: 16px;
+    color: #595959;
 }
 
-.tierMultiplierWrapper {
+.richTextArea {
+    border: none !important;
+    box-shadow: none !important;
+    padding: 12px;
+    resize: none;
+}
+
+.richTextResizeHandle {
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid #d9d9d9;
+    border-top: 10px solid transparent;
+    transform: rotate(45deg);
+}
+
+.livePreviewContainer {
+    background: #fafafa;
+    border: 1px solid #f0f0f0;
+    border-radius: 12px;
+    padding: 16px;
+}
+
+.previewCard {
+    background: white;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.previewHeader {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 12px;
+    align-items: center;
+}
+
+.previewSkeletonLine {
+    height: 12px;
+    background: #f0f0f0;
+    border-radius: 4px;
+}
+
+.previewBody {
+    display: flex;
+    gap: 8px;
+}
+
+.previewSkeletonBlock {
+    height: 48px;
+    background: #f0f0f0;
+    border-radius: 6px;
+    flex: 1;
+}
+
+/* Tier Cards Details */
+.tierCard {
+    height: 100%;
+    transition: all 0.3s;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.tierCard:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    transform: translateY(-4px);
+}
+
+.createTierCard {
+    height: 100%;
+    min-height: 200px;
+    border: 2px dashed #d9d9d9;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s;
+    background: transparent;
+}
+
+.createTierCard:hover {
+    border-color: #1890ff;
+    background: #f0f5ff;
+}
+
+.tierIconBox {
+    width: 32px;
+    height: 32px;
+    background: #F5F5F5;
+    border-radius: 6px;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 8px;
-    color: #d48806;
 }
 
-.tierBenefitsTitle {
-    display: block;
-    margin-bottom: 8px;
+.infoPill {
+    margin-top: 6px;
+    background: #F5F5F5;
+    padding: 6px 12px;
+    border-radius: 6px;
+    color: #262626;
 }
 
-.tierBenefitsList {
-    padding-left: 20px;
-    margin: 0;
-    font-size: 13px;
-}
-
-.createTierBtn {
-    width: 100%;
-    height: 100%;
-    min-height: 300px !important;
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    justify-content: center !important;
-}
-
-.createTierIcon {
-    font-size: 24px;
-}
-
-/* Member Management */
+/* Member Management & Common */
 .toolbar {
     display: flex;
     justify-content: space-between;
@@ -147,8 +217,8 @@
 }
 
 .rankingValue {
-    color: #1890ff !important;
     font-size: 16px !important;
+    font-weight: 600;
 }
 
 .rankingLabel {
@@ -161,39 +231,14 @@
 }
 
 .rewardValue {
-    color: #d48806 !important;
     font-size: 16px !important;
+    font-weight: 600;
 }
 
 .rewardLabel {
     font-size: 10px;
 }
 
-/* Adjustment Modal */
-.adjustmentRankingWrapper {
-    background: #f0f5ff;
-    padding: 16px;
-    border-radius: 12px;
-    margin-bottom: 16px;
-    border: 1px solid #d6e4ff;
-}
-
-.adjustmentRewardWrapper {
-    background: #fff7e6;
-    padding: 16px;
-    border-radius: 12px;
-    margin-bottom: 16px;
-    border: 1px solid #ffe7ba;
-}
-
 .fullWidthInput {
     width: 100% !important;
-}
-
-.rankingIcon {
-    color: #1890ff;
-}
-
-.rewardIcon {
-    color: #d48806;
 }

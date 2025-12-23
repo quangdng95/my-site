@@ -21,6 +21,21 @@ export interface Brand {
      * If not set, system default should be used (though not defined here yet).
      */
     earningRateOverride: number;
+    status: 'active' | 'inactive';
+}
+
+export interface PointRule {
+    id: string;
+    name: string;
+    spending: string;
+    earned: string;
+    status: 'active' | 'inactive';
+}
+
+export interface EmailSetting {
+    id: string;
+    name: string;
+    status: 'active' | 'inactive';
 }
 
 export interface TierBenefit {
@@ -47,7 +62,7 @@ export interface Tier {
     visualColor: string;
 }
 
-export interface Customer {
+export interface Member {
     id: string;
     name: string;
     email: string;
@@ -65,6 +80,13 @@ export interface Customer {
      * Decreases when rewards are redeemed.
      */
     rewardPoints: number;
+
+    totalLifetimeSpend: number;
+    tierStartDate: string; // ISO Date
+    tierEndDate: string;   // ISO Date
+    joinDate: string;      // ISO Date
+    status: 'active' | 'inactive' | 'banned';
+    notes?: string;
 }
 
 export type TransactionType = 'EARN' | 'REDEEM' | 'ADJUSTMENT';

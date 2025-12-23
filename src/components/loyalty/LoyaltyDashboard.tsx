@@ -1,220 +1,85 @@
 'use client';
 
 import React, { useState } from 'react';
-import { 
-    Tabs, Card, Form, Input, Select, Table, InputNumber, Row, Col, Typography, Button, Tag, Tooltip 
-} from 'antd';
-import { 
-    SketchOutlined, CrownOutlined, SafetyCertificateOutlined, GiftOutlined, PlusOutlined, EditOutlined
-} from '@ant-design/icons';
-import { Brand, ProgramSettings, Tier } from '@/lib/loyalty/types';
-import { MemberManagement } from './MemberManagement';
+import { Tabs, Typography, Button, theme, Card, Breadcrumb } from 'antd';
+import { GeneralTab } from './tabs/GeneralTab';
+import { PointSettingsTab } from './tabs/PointSettingsTab';
+import { MemberManagementTab } from './tabs/MemberManagementTab';
+import { EmailTab } from './tabs/EmailTab';
+
 import styles from './Loyalty.module.css';
 
 const { Title, Text } = Typography;
-const { Option } = Select;
-
-// --- MOCK DATA ---
-const MOCK_SETTINGS: ProgramSettings = {
-    programName: 'Coffee Lovers Club',
-    currencyName: 'Beans',
-    resetCycle: 'YEARLY'
-};
-
-const MOCK_BRANDS: Brand[] = [
-    { id: '1', name: 'Nguyễn Thị Diệu', location: 'Quận 3', earningRateOverride: 0.1 },
-    { id: '2', name: 'Đông Du', location: 'Quận 1', earningRateOverride: 0.15 },
-    { id: '3', name: 'Thảo Điền', location: 'Quận 2', earningRateOverride: 0.05 },
-];
-
-const MOCK_TIERS: Tier[] = [
-    { 
-        id: 't1', 
-        name: 'Member', 
-        entryPoint: 0, 
-        multiplier: 1.0, 
-        benefits: [{id: 'b1', description: 'Standard earning rate'}], 
-        visualColor: '#8c8c8c' 
-    },
-    { 
-        id: 't2', 
-        name: 'Silver', 
-        entryPoint: 500, 
-        multiplier: 1.2, 
-        benefits: [{id: 'b2', description: '1.2x Earning'}, {id: 'b3', description: 'Free Birthday Cookie'}], 
-        visualColor: '#d4b106' // Darker yellow/gold
-    },
-    { 
-        id: 't3', 
-        name: 'Gold', 
-        entryPoint: 2000, 
-        multiplier: 1.5, 
-        benefits: [{id: 'b4', description: '1.5x Earning'}, {id: 'b5', description: 'Priority Service'}, {id: 'b6', description: 'Free Upsize'}], 
-        visualColor: '#722ed1' // Purple
-    },
-];
 
 export const LoyaltyDashboard: React.FC = () => {
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    const [settings, setSettings] = useState<ProgramSettings>(MOCK_SETTINGS);
-    const [brands] = useState<Brand[]>(MOCK_BRANDS);
-    const [tiers] = useState<Tier[]>(MOCK_TIERS);
+    const { token } = theme.useToken();
 
-    // --- RENDERERS ---
+    // 1. Dùng State để tự quản lý đang đứng ở Tab nào
+    const [activeTab, setActiveTab] = useState('general');
 
-    const renderConfigurationTab = () => (
-        <div className={styles.configTabWrapper}>
-            
-            {/* SECTION A: GENERAL SETTINGS */}
-            <Card title="General Settings" variant="borderless"
-            styles={{ 
-                    header: { 
-                        padding: '16px 16px 0px 16px',  
-                        minHeight: 'auto',    
-                        borderBottom: 'none'
-                    }}}>
-                <Form layout="vertical" initialValues={settings}>
-                    <Row gutter={16}>
-                        <Col span={8}>
-                            <Form.Item label="Program Name" name="programName">
-                                <Input placeholder="e.g. My Rewards" />
-                            </Form.Item>
-                        </Col>
-                        <Col span={8}>
-                            <Form.Item label="Currency Name" name="currencyName">
-                                <Input placeholder="e.g. Points, Stars" />
-                            </Form.Item>
-                        </Col>
-                        <Col span={8}>
-                            <Form.Item label="Ranking Reset Cycle" name="resetCycle">
-                                <Select>
-                                    <Option value="YEARLY">Yearly</Option>
-                                    <Option value="ROLLING_12_MONTHS">Rolling 12 Months</Option>
-                                    <Option value="NEVER">Never</Option>
-                                </Select>
-                            </Form.Item>
-                        </Col>
-                    </Row>
-                </Form>
-            </Card>
+    // 2. Danh sách các Tab (Chỉ có tên, không có ruột ở đây)
+    const tabItems = [
+        { key: 'general', label: 'General' },
+        { key: 'settings', label: 'Point Settings' },
+        { key: 'members', label: 'Member Management' }, // Đổi tên theo ý bạn
+        { key: 'email', label: 'Email Settings' },
+    ];
 
-            {/* SECTION B: PARTICIPATING BRANDS */}
-            <Card title="Store Brands & Earning Rules" variant="borderless" styles={{ 
-                    header: { 
-                        padding: '16px 16px',  
-                        minHeight: 'auto',    
-                        borderBottom: 'none'
-                    },
-                    body: { padding: 0, overflow: 'hidden' } 
-                    }}>
-                <Table 
-                    dataSource={brands} 
-                    rowKey="id" 
-                    pagination={false}
-                >
-                    <Table.Column title="Brand Name" dataIndex="name" />
-                    <Table.Column title="Location" dataIndex="location" />
-                    <Table.Column 
-                        title="Earning Rate" 
-                        dataIndex="earningRateOverride"
-                        render={(rate: number) => (
-                            <div className={styles.earningRateRender}>
-                                <InputNumber 
-                                    defaultValue={rate} 
-                                    min={0} 
-                                    step={0.01} 
-                                    className={styles.earningRateInput}
-                                />
-                                <Text type="secondary" className={styles.earningRateText}>
-                                    Current: {rate * 100}% back in points
-                                    <br />
-                                    ({rate} points per $1)
-                                </Text>
-                            </div>
-                        )}
-                    />
-                </Table>
-            </Card>
-
-            {/* SECTION C: MEMBERSHIP TIERS */}
-            <Card title="Membership Tiers" variant="borderless">
-                <Row gutter={[16, 16]}>
-                    {tiers.map(tier => (
-                        <Col key={tier.id} xs={24} sm={12} md={8} lg={6}>
-                            <Card 
-                                type="inner"
-                                hoverable
-                                actions={[
-                                    <Button key="edit" type="text" icon={<EditOutlined />}>Edit Tier</Button>
-                                ]}
-                                style={{ borderColor: tier.visualColor }}
-                                className={styles.tierCard}
-                            >
-                                <div className={styles.tierHeader}>
-                                    <Tag color={tier.visualColor} className={styles.tierTag}>
-                                        <CrownOutlined className={styles.tierCrownIcon}/> 
-                                        {tier.name.toUpperCase()}
-                                    </Tag>
-                                </div>
-                                
-                                <div className={styles.tierPoints}>
-                                    <Tooltip title="Cumulative points required to enter this tier">
-                                        <div className={styles.tierPointsWrapper}>
-                                            <SafetyCertificateOutlined className={styles.tierShieldIcon} />
-                                            <Title level={3} className={styles.tierPointsValue}>{tier.entryPoint.toLocaleString()}</Title>
-                                        </div>
-                                    </Tooltip>
-                                    <Text type="secondary">Ranking Points Required</Text>
-                                </div>
-
-                                <div className={styles.tierMultiplier}>
-                                    <div className={styles.tierMultiplierWrapper}>
-                                        <GiftOutlined />
-                                        <Text strong>{tier.multiplier}x Reward Earning</Text>
-                                    </div>
-                                </div>
-
-                                <div>
-                                    <Text type="secondary" className={styles.tierBenefitsTitle}>Benefits:</Text>
-                                    <ul className={styles.tierBenefitsList}>
-                                        {tier.benefits.map(b => (
-                                            <li key={b.id}>{b.description}</li>
-                                        ))}
-                                    </ul>
-                                </div>
-                            </Card>
-                        </Col>
-                    ))}
-                    
-                    {/* CREATE NEW TIER CARD */}
-                    <Col xs={24} sm={12} md={8} lg={6}>
-                        <Button 
-                            type="dashed" 
-                            className={styles.createTierBtn}
-                            icon={<PlusOutlined className={styles.createTierIcon} />}
-                        >
-                            Create New Tier
-                        </Button>
-                    </Col>
-                </Row>
-            </Card>
-        </div>
-    );
+    // 3. Hàm render nội dung dựa theo State
+    const renderContent = () => {
+        switch (activeTab) {
+            case 'general': return <GeneralTab />;
+            case 'settings': return <PointSettingsTab />;
+            case 'members': return <MemberManagementTab />;
+            case 'email': return <EmailTab />;
+            default: return <GeneralTab />;
+        }
+    };
 
     return (
         <div className={styles.pageWrapper}>
-             <Title level={2} className={styles.pageTitle}>
-                <SketchOutlined className={styles.pageTitleIcon}/>
-                Loyalty & Rewards Program
-            </Title>
-            
-            <Tabs 
-                defaultActiveKey="config" 
-                items={[
-                    { key: 'config', label: 'Program Configuration', children: renderConfigurationTab() },
-                    { key: 'members', label: 'Member Management', children: <MemberManagement /> },
-                ]}
-            />
+            {/* --- PHẦN HEADER CARD (Chứa Title + Button + Tabs Nav) --- */}
+            <div
+                style={{
+                    backgroundColor: token.colorBgContainer, // Màu trắng
+                    borderRadius: token.borderRadiusLG,      // Bo góc
+                    padding: '24px 24px 0 24px',             // Padding trên/trái/phải (Dưới = 0 để Tab dính đáy)
+                    boxShadow: '0 2px 8px rgba(0,0,0,0.05)'  // Đổ bóng nhẹ cho nổi
+                }}
+            >
+                {/* Dòng 1: Title & Button */}
+                <Breadcrumb style={{ marginBottom: 16 }}
+                    items={[
+                        { title: 'Configuration' },
+                        { title: 'Loyalty' },
+                    ]}>
+                </Breadcrumb>
+
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: 16 }}>
+                    <div>
+                        <Title level={2} style={{ margin: 0, fontWeight: 700, display: 'inline-block' }}>Loyalty</Title>
+                    </div>
+                    <Button type="primary" size="large" style={{ background: token.colorPrimary }}>
+                        Save Change
+                    </Button>
+
+                </div>
+
+
+                {/* Dòng 2: Thanh Tab nằm lọt thỏm trong Card này luôn */}
+                <Tabs
+                    activeKey={activeTab}
+                    onChange={setActiveTab} // Khi bấm Tab thì set lại State
+                    items={tabItems}
+                    tabBarStyle={{ marginBottom: 0 }} // Quan trọng: Xóa khoảng trắng dưới đít Tab
+                    size="large"
+                />
+            </div>
+
+            {/* --- PHẦN NỘI DUNG (Nằm tách biệt ở dưới nền xám) --- */}
+            <div className={styles.tabContentContainer} style={{ padding: '24px' }}>
+                {renderContent()}
+            </div>
         </div>
     );
 };
